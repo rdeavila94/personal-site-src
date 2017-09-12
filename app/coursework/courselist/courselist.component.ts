@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Course} from '../../models/course.model';
 
 @Component({
@@ -18,7 +18,7 @@ export class CourselistComponent implements OnInit {
       new Course('Technical Communication', 'csulb', 'http://csulb.edu/divisions/aa/catalog/current/cla/english/engl_ud.html', 'Learned to write technically', [])
   ];
 
-  display = {'udemy': true, 'udacity': true, 'csulb': true};
+  @Input('display')display = {'udemy': true, 'udacity': true, 'csulb': true};
 
   @Output()sendCourse = new EventEmitter<Course>();
   constructor() { }

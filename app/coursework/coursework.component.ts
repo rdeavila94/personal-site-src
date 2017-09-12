@@ -7,9 +7,11 @@ import {Course} from '../models/course.model';
   styleUrls: ['./coursework.component.css']
 })
 export class CourseworkComponent implements OnInit {
+  /*this is the boolean that determines whether to change screens*/
   @Input('change') change: boolean;
   selectedCourse: Course;
   constructor() { }
+  display = {'udemy': true, 'udacity': true, 'csulb': true};
 
   ngOnInit() {
   }
