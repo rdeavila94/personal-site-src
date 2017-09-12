@@ -11,7 +11,7 @@ some spacing when the screen is large-->
 </div>
 
 <!--the row containing the courselist AND the course details-->
-<div class="row no-gutters border border-success animated" [ngClass]="change ? 'fadeIn': 'fadeOut'">
+<div class="row no-gutters animated rounded box-shadow" [ngClass]="change ? 'fadeIn': 'fadeOut'">
 
   <!--The left hand side consisting of the course list and related info. It's lg-5 because
   at medium you want them stacked already-->
@@ -21,9 +21,9 @@ some spacing when the screen is large-->
 </div>
   <!--the Right hand side. If nothing is selected, display a request to select
     Also, if nothing is selected align that text to the center-->
-  <div class="col-lg-7 text-center" style="min-height: 250px;">
+  <div class="col-lg-7 text-center" style="min-height: 400px;">
     <app-coursedetail *ngIf="selectedCourse; else infoText" [detailCourse]="selectedCourse"></app-coursedetail>
-    <ng-template #infoText><p class="font-weight-bold text-danger pt-5">Please select a Course!</p></ng-template>
+    <ng-template #infoText><p class="font-weight-bold pt-5">Select a course!</p></ng-template>
 
 
   </div>

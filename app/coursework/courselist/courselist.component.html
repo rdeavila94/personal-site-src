@@ -1,5 +1,5 @@
 <!--list div. Will bind the course and the display boolean to the individual courses!-->
-<div class="border border-success">
+<div>
   <ul class="list-group" style="overflow-y: scroll; height: 250px;">
     <app-course *ngFor="let thisCourse of courses" [listCourse]="thisCourse" [displayCourse]="display[thisCourse.provider]"
     (selectCourse)="sendSelectedCourse($event)"></app-course>

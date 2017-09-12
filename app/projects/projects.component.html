@@ -8,8 +8,8 @@ some spacing when the screen is large-->
 </div>
 
 <!--the row containing the projects AND the their details-->
-<div class="row no-gutters border border-danger animated justify-content-between" [ngClass]="change ? 'fadeIn': 'fadeOut'">
-  <div class="col-md-12 col-lg-5" *ngFor="let item of projectsList">
+<div class="row no-gutters animated justify-content-around" [ngClass]="change ? 'fadeIn': 'fadeOut'">
+  <div class="col-md-9 col-lg-5" *ngFor="let item of projectsList">
     <app-project [thisProject]="item"></app-project>
   </div>
 
