@@ -8,7 +8,7 @@ import {Project} from '../models/project.model';
 })
 export class ProjectsComponent implements OnInit {
   @Input('change') change: boolean;
-  projectsList = [new Project('Personal site', 'my personal website', 'assets/Capture.JPG'), new Project('CRM', 'CRM for performing CRUD operations.', 'assets/crm.gif')]
+  projectsList = [new Project('Personal site', 'my personal website', 'assets/Capture.JPG', 'assets/Capture.JPG')];
 
   constructor() {}
 
