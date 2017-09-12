@@ -13,6 +13,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { DelayedExitDirective } from './directives/delayed-exit.directive';
 import { ProjectComponent } from './projects/project/project.component';
+import { CoursebodyComponent } from './coursework/coursebody/coursebody.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProjectComponent } from './projects/project/project.component';
     ContactComponent,
     DelayedExitDirective,
     ProjectComponent,
+    CoursebodyComponent
   ],
   imports: [
     BrowserModule

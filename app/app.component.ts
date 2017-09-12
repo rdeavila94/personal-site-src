@@ -11,6 +11,6 @@ export class AppComponent implements OnInit{
   page: number;
 
   ngOnInit() {
-    this.page = 3;
+    this.page = 2;
   }
 }

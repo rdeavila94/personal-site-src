@@ -16,17 +16,21 @@ some spacing when the screen is large-->
   <!--The left hand side consisting of the course list and related info. It's lg-5 because
   at medium you want them stacked already-->
 
-
-  <div class="col-lg-5">
-    <app-courselist (sendCourse)="selectedCourse = $event"></app-courselist>
-  </div>
-
+<div class="col-lg-5">
+  <app-coursebody></app-coursebody>
+</div>
   <!--the Right hand side. If nothing is selected, display a request to select
-      Also, if nothing is selected align that text to the center-->
+    Also, if nothing is selected align that text to the center-->
   <div class="col-lg-7 text-center" style="min-height: 250px;">
     <app-coursedetail *ngIf="selectedCourse; else infoText" [detailCourse]="selectedCourse"></app-coursedetail>
     <ng-template #infoText><p class="font-weight-bold text-danger pt-5">Please select a Course!</p></ng-template>
 
 
   </div>
+
+  <div class="col-lg-12">
+    <app-courselist (sendCourse)="selectedCourse = $event"></app-courselist>
+  </div>
+
+
 </div>
