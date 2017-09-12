@@ -1,0 +1,16 @@
+.bg-mid {
+  background-color: #d8d8d8;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.bg-black{
+  background:#000;
+  color:#fff;
+}
+
+.add-shadow {
+  text-shadow: 2px 2px grey;
+}

@@ -1,0 +1,30 @@
+<div class="card border border-primary" style="height: 100%;">
+  <div class="card-header">
+    <h3>{{detailCourse.name}}</h3>
+    <small class="text-muted text-uppercase">{{detailCourse.provider}}</small>
+  </div>
+
+  <!--Display the description, and a projects IF there are any. 0 is falsy, so the length being 0 will omit the p from the DOM-->
+  <div class="card-body">
+    <p>{{detailCourse.description}}</p>
+    <h4 *ngIf="detailCourse.projects.length"> Relevant Projects:</h4>
+    <a *ngFor="let item of detailCourse.projects" href="{{item.projectLink}}">{{item.projectName}}</a>
+
+    <!--Display this section if they've selected Technical Communication-->
+    <div *ngIf="detailCourse.name == 'Technical Communication'">Working</div>
+
+  </div>
+
+
+
+
+
+
+  <div class="card-footer">
+    <small *ngIf="detailCourse.url; else CSULBurl"><a [href]="detailCourse.url">More information</a> </small>
+    <ng-template #CSULBurl>
+      <small><a href="http://web.csulb.edu/divisions/aa/catalog/2016-2017/coe/computer_engineering/cecs_ld.html">More Information</a></small>
+    </ng-template>
+  </div>
+
+</div>

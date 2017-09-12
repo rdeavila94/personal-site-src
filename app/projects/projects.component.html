@@ -1,0 +1,16 @@
+<!--The row describing this page and your projects. It's md-10 because you want
+some spacing when the screen is large-->
+<div class="row no-gutters mb-2 justify-content-center bg-danger rounded-bottom box-shadow text-white text-center">
+  <div class="col-md-10">
+    <h1 class="p1 add-shadow display-4">Projects</h1>
+    <p>These are some of the projects I have worked on. They consist of both academic and personal. </p>
+  </div>
+</div>
+
+<!--the row containing the projects AND the their details-->
+<div class="row no-gutters border border-danger animated justify-content-between" [ngClass]="change ? 'fadeIn': 'fadeOut'">
+  <div class="col-md-12 col-lg-5" *ngFor="let item of projectsList">
+    <app-project [thisProject]="item"></app-project>
+  </div>
+
+</div>

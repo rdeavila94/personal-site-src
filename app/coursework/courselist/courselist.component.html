@@ -1,0 +1,32 @@
+
+<!--Button and Courses section-->
+<div class="border border-success text-center">
+  <h1 class="bg-black py-1 rounded"> Courses </h1>
+  <p class="px-1 rounded">Here are the courses that I feel have contributed to my growth as a developer, going as far back to the first programming class I ever took where I printed out my first "Hello, World!" (if only programming had remained that simple). Included in the list are courses I've taken in academia and courses I've taken through online platforms. If you're not interested in courses I've taken from a particular institution, filter them out with the click of a button! Maybe you only want to know what I did in academia, or perhaps you want to know what I decide to learn in my spare time online. Classes in computer science, including my technical writing class. Check em out! TO view writing samples, select my Technical Communication course from the list of classes.</p>
+
+  <!--Buttons section-->
+  <div class="row no-gutters justify-content-center border border-success">
+      <span class="btn m-2 pointer"
+            [ngClass]="display['csulb'] ? 'btn-dark' : 'btn-outline-dark'"
+            (click)="display['csulb']=!display['csulb']"
+      >CSULB</span>
+    <span class="btn  m-2 pointer"
+          [ngClass]="display['udemy'] ? 'btn-dark' : 'btn-outline-dark'"
+          (click)="display['udemy']=!display['udemy']"
+    >Udemy</span>
+    <span class="btn  m-2 pointer"
+          [ngClass]="display['udacity'] ? 'btn-dark' : 'btn-outline-dark'"
+          (click)="display['udacity']=!display['udacity']"
+    >Udacity</span>
+  </div>
+</div>
+
+
+
+<!--list div. Will bind the course and the display boolean to the individual courses!-->
+<div class="border border-success">
+  <ul class="list-group" style="overflow-y: scroll; height: 250px;">
+    <app-course *ngFor="let thisCourse of courses" [listCourse]="thisCourse" [displayCourse]="display[thisCourse.provider]"
+    (selectCourse)="sendSelectedCourse($event)"></app-course>
+  </ul>
+</div>

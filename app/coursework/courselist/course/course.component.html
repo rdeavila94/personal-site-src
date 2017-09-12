@@ -1,0 +1,1 @@
+<li class="list-group-item" (click)="sendCourse()" (mouseenter)="enter = true" (mouseleave)="enter=false" [ngClass]="{glow: enter}" *ngIf="displayCourse">{{listCourse.name}} <small class="pull-right text-muted">{{listCourse.provider}}</small> </li>
