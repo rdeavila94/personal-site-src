@@ -16,6 +16,9 @@ import { ProjectComponent } from './projects/project/project.component';
 import { CoursebodyComponent } from './coursework/coursebody/coursebody.component';
 import { HomeComponent } from './home/home.component';
 import { HobbyComponent } from './about/hobby/hobby.component';
+import { DelayExitNotEnterDirective } from './directives/delay-exit-not-enter.directive';
+import { AboutBodyComponent } from './about/about-body/about-body.component';
+import { HomeBodyComponent } from './home/home-body/home-body.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { HobbyComponent } from './about/hobby/hobby.component';
     ProjectComponent,
     CoursebodyComponent,
     HomeComponent,
-    HobbyComponent
+    HobbyComponent,
+    DelayExitNotEnterDirective,
+    AboutBodyComponent,
+    HomeBodyComponent
   ],
   imports: [
     BrowserModule

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
 import {Course} from '../../../models/course.model';
 
 
@@ -7,7 +7,7 @@ import {Course} from '../../../models/course.model';
   templateUrl: './course.component.html',
   styleUrls: ['./course.component.css']
 })
-export class CourseComponent implements OnInit {
+export class CourseComponent implements OnInit, OnChanges {
   @Input('listCourse')listCourse: Course;
   @Output() selectCourse = new EventEmitter<Course>();
   enter = false;
@@ -15,6 +15,10 @@ export class CourseComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.displayCourse);
+  }
+
+  ngOnChanges() {
     console.log(this.displayCourse);
   }
 

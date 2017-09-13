@@ -8,7 +8,7 @@ import {Hobby} from '../models/hobby.model';
 })
 export class AboutComponent implements OnInit {
   @Input('change') change: boolean;
-  hobbies = [];
+  hobbies = [new Hobby('assets/boxing.jpg', 'Me fooling around with my pal Tri, circa 2014. Note the long hair of the time.'), new Hobby('assets/boxing.jpg', 'Me fooling around with my pal Tri, circa 2014. Note the long hair of the time.'), new Hobby('assets/sushi-cafe.jpg', 'A typical dinner for myself.')];
   constructor() { }
 
   ngOnInit() {
