@@ -15,6 +15,7 @@ import { DelayedExitDirective } from './directives/delayed-exit.directive';
 import { ProjectComponent } from './projects/project/project.component';
 import { CoursebodyComponent } from './coursework/coursebody/coursebody.component';
 import { HomeComponent } from './home/home.component';
+import { HobbyComponent } from './about/hobby/hobby.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     DelayedExitDirective,
     ProjectComponent,
     CoursebodyComponent,
-    HomeComponent
+    HomeComponent,
+    HobbyComponent
   ],
   imports: [
     BrowserModule
