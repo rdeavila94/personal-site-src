@@ -23,11 +23,11 @@
     cursor:pointer;
   }
 }
-
+ /*on x large screens*/
 @media(min-width:1199px){
   .port-item{
     i {
-      padding-top: .75em;
+      padding-top:.75em;
     }
     p {
       padding-bottom:.5em;

@@ -10,10 +10,12 @@
 <div class="container">
   <app-header [currentPage]="page" (selectedPage)="page = $event"></app-header>
 
-  <app-about [change]="page === 1" *appDelayedExit="page === 1"></app-about>
+  <app-home [change]="page === 1" *appDelayedExit="page === 1"></app-home>
   <app-coursework [change]="page === 2" *appDelayedExit="page === 2"></app-coursework>
   <app-projects [change]="page === 3" *appDelayedExit="page === 3"></app-projects>
-  <app-contact [change]="page === 4" *appDelayedExit="page === 4"></app-contact>
+  <app-about [change]="page === 4" *appDelayedExit="page===4"></app-about>
+  <app-contact [change]="page === 5" *appDelayedExit="page === 5"></app-contact>
+
   <app-footer></app-footer>
 </div>
 

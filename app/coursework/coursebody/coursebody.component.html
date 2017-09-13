@@ -1,6 +1,6 @@
 <!--Courses section-->
 <div class="text-center">
-  <h1 class="py-1 text-success"> Courses </h1>
+  <h1 class="py-1 text-primary"> Courses </h1>
   <p class="px-2">Here are the courses that I feel have contributed to my growth as a developer, going as far back to the first programming class I ever took where I printed out my first "Hello, World!" (if only programming had remained that simple). Included in the list are courses I've taken in academia and courses I've taken through online platforms. If you're not interested in courses I've taken from a particular institution, filter them out with the click of a button! Maybe you only want to know what I did in academia, or perhaps you want to know what I decide to learn in my spare time online. Classes in computer science, including my technical writing class. Check em out! TO view writing samples, select my Technical Communication course from the list of classes.</p>
 </div>
 
@@ -8,15 +8,15 @@
 <!--Buttons section-->
 <div class="row no-gutters justify-content-center">
       <span class="btn m-2 pointer"
-            [ngClass]="button['csulb'] ? 'btn-success' : 'btn-outline-success'"
+            [ngClass]="button['csulb'] ? 'btn-primary' : 'btn-outline-primary'"
             (click)="emitButtonClick('csulb')"
       >CSULB</span>
   <span class="btn  m-2 pointer"
-        [ngClass]="button['udemy'] ? 'btn-success' : 'btn-outline-success'"
+        [ngClass]="button['udemy'] ? 'btn-primary' : 'btn-outline-primary'"
         (click)="emitButtonClick('udemy')"
   >Udemy</span>
   <span class="btn  m-2 pointer"
-        [ngClass]="button['udacity'] ? 'btn-success' : 'btn-outline-success'"
+        [ngClass]="button['udacity'] ? 'btn-primary' : 'btn-outline-primary'"
         (click)="emitButtonClick('udacity')"
   >Udacity</span>
 </div>
