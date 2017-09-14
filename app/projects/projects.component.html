@@ -3,7 +3,7 @@ some spacing when the screen is large-->
 <div class="row no-gutters mb-2 justify-content-center bg-danger rounded-bottom box-shadow text-white text-center">
   <div class="col-md-10">
     <h1 class="p1 add-shadow display-4">Projects</h1>
-    <p>These are some of the projects I have worked on. They consist of both academic and personal. Lorem ipsum dolor sit amet, et eos deleniti invidunt, an eos molestie electram efficiendi. Diam omnis an eos. Nihil democritum et quo, mel solum iusto mandamus in. Ea has meliore scribentur, civibus aliquando an vim. His et postea putant viderer.
+    <p>These are some of the projects I have worked on. They consist of both academic and personal. Lorem ipsum dolor sit amet, et eos deleniti invidunt, an eos molestie electram efficiendi. Diam omnis an eos. Nihil democritum et quo, mel solum iusto mandamus in. Ea has meliore scribentur, civibus aliquando an vim. His et postea putant viderer.<br>
 
       Ullum suavitate eum cu. Mei populo oblique copiosae in, mel ut dicit splendide. Eam eu zril salutandi, an pri nostro atomorum expetenda. Cu sed fugit mentitum disputando. Cu copiosae constituto vel, liber graece disputando ea nam. Qui ut libris fabulas, cu veniam nullam quaestio per. Meis vocent interpretaris nam eu, delenit suavitate explicari eam ne.
 
@@ -12,7 +12,7 @@ some spacing when the screen is large-->
 </div>
 
 <!--the row containing the projects AND the their details-->
-<div class="row no-gutters animated justify-content-around pt-2" [ngClass]="change ? 'fadeIn': 'fadeOut'">
+<div class="row no-gutters animated justify-content-around pt-2 bg-light box-shadow" [ngClass]="change ? 'fadeIn': 'fadeOut'">
   <div class="col-md-10 col-lg-5" *ngFor="let item of projectsList">
     <app-project [thisProject]="item"></app-project>
   </div>

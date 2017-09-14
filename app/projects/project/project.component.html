@@ -1,5 +1,5 @@
 <div class="card mb-3 box-shadow text-center rounded bg-red">
   <img class="card-img-top" (mouseleave)="thisProject.imgPath = thisProject.staticImgPath" (mouseenter)="thisProject.imgPath = thisProject.animatedImgPath" [src]="thisProject.imgPath">
   <h3 class="card-title py-1">{{thisProject.name}}</h3>
-  <p class="card-text garamond">{{thisProject.description}}</p>
+  <p class="card-text garamond px-1">{{thisProject.description}}</p>
 </div>
