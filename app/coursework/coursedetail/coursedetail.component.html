@@ -5,14 +5,13 @@
   </div>
 
   <!--Display the description, and a projects IF there are any. 0 is falsy, so the length being 0 will omit the p from the DOM-->
-  <div class="card-body">
+  <div class="card-body p-2">
     <p>{{detailCourse.description}}</p>
     <h4 *ngIf="detailCourse.projects.length"> Relevant Projects:</h4>
     <a *ngFor="let item of detailCourse.projects" href="{{item.projectLink}}">{{item.projectName}}</a>
 
     <!--Display this section if they've selected Technical Communication-->
-    <div *ngIf="detailCourse.name == 'Technical Communication'">Working</div>
-
+    <ng-content></ng-content>
   </div>
 
 

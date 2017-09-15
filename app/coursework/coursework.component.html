@@ -5,7 +5,7 @@ some spacing when the screen is large-->
   <div class="col-md-11">
     <h1 class="p1 add-shadow display-4">Coursework</h1>
     <p> Here you will find information about the coursework that I have completed, both
-    in academia and through personal endeavor. Lorem ipsum dolor sit amet, duo amet iudico theophrastus et, no prodesset sadipscing sit, soleat urbanitas id est. Sit ex assum partiendo. Nam ad ipsum clita. Est in vero semper voluptatum, eam ut quot augue quaerendum. Ad iriure latine efficiantur mea, error iuvaret te cum, te corrumpit voluptatum scribentur vim. Sed ut iusto inimicus, at mea sonet utamur. <span class="bold">This website was undoubtedly my biggest undertaking in front-end.</span> If you are interested in writing samples select my Technical Communication class by CSULB from the list of courses below.
+      in academia and through personal endeavor. Information is only offered for courses relevant to my profession so to not fill the page with bloat (I doubt anyone is interested in my dance or theater classes from college). If you are interested in a transcript just contact me and I will be more than happy to supply one. <span class="font-weight-bold"> For writing samples select 'Technical Communication' by CSULB from the list of courses below.</span>
     </p>
   </div>
 </div>
@@ -22,9 +22,37 @@ some spacing when the screen is large-->
   <!--the Right hand side. If nothing is selected, display a request to select
     Also, if nothing is selected align that text to the center-->
   <div class="col-lg-7 text-center" style="min-height: 400px;">
-    <app-coursedetail *ngIf="selectedCourse; else infoText" [detailCourse]="selectedCourse"></app-coursedetail>
-    <ng-template #infoText><p class="font-weight-bold pt-5">Select a course!</p></ng-template>
+    <app-coursedetail *ngIf="selectedCourse; else infoText" [detailCourse]="selectedCourse">
 
+      <!--If the course is technical communication, inject this into the content-->
+      <ul *ngIf="selectedCourse.name === 'Technical Communication'" class="list-inline">
+        <li>
+          <a href="assets/project_proposal.pdf" class="fa fa-file-pdf-o">Project Proposal</a><small>A project proposal for the development of a monorail at CSULB.</small>
+        </li>
+        <li>
+          <a href="assets/Brochure.pdf" class="fa fa-file-pdf-o">Brochure</a><small>A brochure for a study abroad program in London.</small>
+        </li>
+        <li>
+          <a href="assets/formal_letter.pdf" class="fa fa-file-pdf-o">Formal Letter</a><small>A formal letter from the president (myself) of the student association to a CSULB professor.</small>
+        </li>
+        <li>
+          <a href="assets/Abstract.pdf" class="fa fa-file-pdf-o">Abstract</a><small>An abstract of an article about the use of clutter in the English language.</small>
+        </li>
+        <li>
+          <a href="assets/instruction_manual.pdf" class="fa fa-file-pdf-o">Instruction Manual</a> <small>An instruction manual on how to operate a simple flashlight..</small>
+        </li>
+        <li>
+          <a href="assets/short_report.pdf" class="fa fa-file-pdf-o">Short Report</a><small>A report on the importance of critical thinking.</small>
+        </li>
+        <li>
+          <a href="assets/memo.pdf" class="fa fa-file-pdf-o">Memorandum</a><small>A memo written to the CEO of a mining company weighing the pros and cons of operating near Yosemite National Park.</small>
+        </li>
+      </ul>
+
+    </app-coursedetail>
+    <ng-template #infoText>
+      <p class="font-weight-bold pt-5">Select a course!</p>
+    </ng-template>
 
   </div>
 
