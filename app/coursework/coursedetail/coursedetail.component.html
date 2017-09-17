@@ -8,7 +8,7 @@
   <div class="card-body p-2">
     <p>{{detailCourse.description}}</p>
     <h4 *ngIf="detailCourse.projects.length"> Relevant Projects:</h4>
-    <a *ngFor="let item of detailCourse.projects" href="{{item.projectLink}}">{{item.projectName}}</a>
+    <a *ngFor="let item of detailCourse.projects" href="{{item.projectLink}}" class="px-1">{{item.projectName}}</a>
 
     <!--Display this section if they've selected Technical Communication-->
     <ng-content></ng-content>
@@ -27,3 +27,5 @@
   </div>
 
 </div>
+
+

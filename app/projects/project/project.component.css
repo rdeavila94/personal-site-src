@@ -1,3 +1,7 @@
 .bg-red{
   background-color: #ffd0c6;
 }
+
+.fill {
+  height: 100%;
+}

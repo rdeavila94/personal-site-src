@@ -24,6 +24,7 @@ some spacing when the screen is large-->
   <div class="col-lg-7 text-center" style="min-height: 400px;">
     <app-coursedetail *ngIf="selectedCourse; else infoText" [detailCourse]="selectedCourse">
 
+
       <!--If the course is technical communication, inject this into the content-->
       <ul *ngIf="selectedCourse.name === 'Technical Communication'" class="list-inline">
         <li>
