@@ -21,7 +21,7 @@ some spacing when the screen is large-->
 </div>
   <!--the Right hand side. If nothing is selected, display a request to select
     Also, if nothing is selected align that text to the center-->
-  <div class="col-lg-7 text-center">
+  <div class="col-lg-7 text-center" id="course_col">
     <app-coursedetail *ngIf="selectedCourse; else infoText" [detailCourse]="selectedCourse">
 
 
@@ -35,9 +35,6 @@ some spacing when the screen is large-->
         </li>
         <li>
           <a href="assets/formal_letter.pdf" class="fa fa-file-pdf-o">Formal Letter</a><small>A formal letter from the president (myself) of the student association to a CSULB professor.</small>
-        </li>
-        <li>
-          <a href="assets/Abstract.pdf" class="fa fa-file-pdf-o">Abstract</a><small>An abstract of an article about the use of clutter in the English language.</small>
         </li>
         <li>
           <a href="assets/instruction_manual.pdf" class="fa fa-file-pdf-o">Instruction Manual</a> <small>An instruction manual on how to operate a simple flashlight..</small>
