@@ -11,7 +11,7 @@ some spacing when the screen is large-->
 </div>
 
 <!--the row containing the courselist AND the course details-->
-<div class="row no-gutters animated rounded box-shadow" [ngClass]="change ? 'fadeIn': 'fadeOut'">
+<div class="row no-gutters animated rounded box-shadow" [ngClass]="change ? direction ? 'fadeInRight': 'fadeInLeft' : direction ? 'fadeOutLeft': 'fadeOutRight' ">
 
   <!--The left hand side consisting of the course list and related info. It's lg-5 because
   at medium you want them stacked already-->

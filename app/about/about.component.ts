@@ -8,6 +8,10 @@ import {Hobby} from '../models/hobby.model';
 })
 export class AboutComponent implements OnInit {
   @Input('change') change: boolean;
+  /*The current page, which determines whether the animation should bounce in left or right*/
+  @Input('direction') direction: boolean;
+
+
   hobbies = [new Hobby('assets/boxing.jpg', 'Showing some youngsters how to throw a straight right.'), new Hobby('assets/sushi-cafe.jpg', 'What I would consider a pretty good day.'), new Hobby('assets/dancing.jpg', 'A night out dancing in Long Beach, CA')];
   constructor() { }
 
