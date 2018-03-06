@@ -21,8 +21,9 @@ export class AppComponent implements OnInit{
   }
 
   changePage(newPage: number) {
-
-    if (newPage > this.page) {
+    // if the page you selected is the one you're on, do nothing.
+    if (newPage === this.page){
+          } else if (newPage > this.page) {
       this.direction = true;
     } else {this.direction = false; }
 

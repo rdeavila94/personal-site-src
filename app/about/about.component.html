@@ -9,7 +9,7 @@ some spacing when the screen is large-->
 </div>
 
 <!--this is how you had it: [ngClass]="change ? 4 - oldPage > 0 ? 'fadeInRight': 'fadeInLeft' : 4 - oldPage > 0 ? 'fadeOutRight': 'fadeOutLeft' "-->
-<div class="row no-gutters box-shadow animated bg-light rounded" [ngClass]="change ? direction ? 'fadeInRight': 'fadeInLeft' : direction ? 'fadeOutLeft': 'fadeOutRight' ">
+<div class="row no-gutters box-shadow animated bg-light rounded" [ngClass]="change ? direction ? 'slideInRight': 'slideInLeft' : direction ? 'slideOutLeft': 'slideOutRight' ">
   <div class="col-lg-12">
     <app-about-body></app-about-body>
     <div class="card-deck">
