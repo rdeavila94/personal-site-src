@@ -11,7 +11,7 @@ export class ProjectComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.thisProject.imgPath = this.thisProject.staticImgPath;
+    this.thisProject.imgPath = this.thisProject.animatedImgPath;
   }
 
 }
